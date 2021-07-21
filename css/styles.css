@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap");
+@import "reset.css";
+@import "상태창.css";
+@import "variables.css";
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.환영-header {
+  margin: 90px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.환영-header__title {
+  margin-bottom: 35px;
+  font-size: 25px;
+  color: #476cbb;
+}
+.환영-header__text {
+  width: 60%;
+  color: #92a8d1;
+}
+
+#로그인-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+#로그인-form input {
+  padding: 20px 0px;
+  border: none;
+  font-size: 18px;
+  transition: border-color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+#로그인-form input:not([type="submit"]) {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+#로그인-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#로그인-form input:focus {
+  border-color: var(--serenity);
+}
+
+#로그인-form input[type="password"] {
+  margin-bottom: 40px;
+}
+
+#로그인-form input[type="submit"] {
+  margin-bottom: 20px;
+  background-color: var(--serenity);
+  cursor: pointer;
+  border-radius: 5px;
+}
+#로그인-form input[type="submit"]:hover {
+  background-color: #f7cac9;
+}
+
+#로그인-form a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  color: inherit;
+}
