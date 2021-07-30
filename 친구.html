@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>친구 - 코코아 클론</title>
+</head>
+<body class="no-drag">
+    <div class="상태창">
+        <div class="상태창__column">
+            <span>신호 없음</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="상태창__column">
+            <span>18:43</span>
+        </div>
+        <div class="상태창__column">
+            <span>110%</span>
+            <i class="fas fa-battery-full fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="화면-헤더">
+        <h1 class="화면-헤더__title">친구</h1>
+        <div class="화면-헤더__icons">
+            <span>
+                <i class="fas fa-search fa-lg"></i>
+            </span>
+            <span>
+                <i class="fas fa-music fa-lg"></i>
+            </span>
+            <span>
+                <a href="설정.html">
+                    <i class="fas fa-cog fa-lg"></i>
+                </a>
+            </span>
+        </div>
+    </header>
+
+    <a id="친구-display-link">
+        <i class="fas fa-info-circle"></i>
+        친구 이름 보기
+        <i class="fas fa-chevron-right fa-xs"></i>
+    </a>
+
+    <main class="친구-화면">
+        <div class="친구-화면__not-hover">
+            <div class="유저-요소">
+                <div class="유저-요소__column">
+                    <img 
+                    src="screenshots/프로필.jpg" 
+                    class="유저-요소__avatar 유저-요소__avatar__xl" />
+                    <div class="유저-요소__text">
+                        <h4 class="유저-요소__title">Nightmare</h4>
+                        <h6 class="유저-요소__subtitle">Enjoy your daydream :)</h6>
+                    </div>
+                </div>
+                <div class="유저-요소__column"></div>
+            </div>
+
+            <div class="친구-화면__channel">
+
+                <div class="친구-화면__channel-header">
+                    <span>채널</span>
+                    <i class="fas fa-chevron-up fa-xs"></i>
+                </div>
+
+                <div class="유저-요소">
+                    <div class="유저-요소__column">
+                        <img 
+                            src="screenshots/프로필.jpg" 
+                            class="유저-요소__avatar 유저-요소__avatar__sm" />
+                        <div class="유저-요소__text">
+                            <h4 class="유저-요소__title 유저-요소__title--얇음">채널</h4>
+                        </div>
+                    </div>
+                    <div class="유저-요소__column">
+                        <div>
+                            <span>2</span>
+                            <i class="fas fa-chevron-right fa-xs"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="친구-화면__hover">
+            <div class="친구-화면__friends">
+                <div class="친구-화면__friends-header">
+                    <div class="친구-화면__border">
+                        <div class="친구-화면__friends-header__column">
+                            <span>친구</span>
+                            <span>2</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-chevron-up fa-xs"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="유저-요소__main--hover">
+                    <div class="유저-요소__column">
+                        <img 
+                        src="screenshots/청려02_60X60.jpg" 
+                        class="유저-요소__avatar 유저-요소__avatar__sm" />
+                        <div class="유저-요소__text">
+                            <h4 class="유저-요소__title 유저-요소__title--얇음">청려(신재현)</h4>
+                            <h6 class="유저-요소__subtitle">V-tic Leader</h6>
+                        </div>
+                    </div>
+                    <div class="유저-요소__column"></div>
+                </div>
+
+                <div class="유저-요소__main--hover">
+                    <div class="유저-요소__column">
+                        <img 
+                        src="screenshots/Nobody.jpg" 
+                        class="유저-요소__avatar 유저-요소__avatar__sm" />
+                        <div class="유저-요소__text">
+                            <h4 class="유저-요소__title 유저-요소__title--얇음">류건우(박문대)</h4>
+                            <h6 class="유저-요소__subtitle 유저-요소__subtitle--문대">Testar Main vocal</h6>
+                        </div>
+                    </div>
+                    <div class="유저-요소__column"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <nav class="네비">
+        <ul class="네비__list">
+            <li class="네비__btn">
+                <a class="네비__link" href="친구.html">
+                    <i class="fas fa-user fa-2x"></i>
+                </a>
+            </li>
+            <li class="네비__btn">
+                <a class="네비__link" href="채팅.html">
+                    <span class="네비__notification">1</span>
+                    <i class="far fa-comment fa-2x"></i>
+                </a>
+            </li>
+            <li class="네비__btn">
+                <a class="네비__link" href="찾기.html">
+                    <i class="fas fa-search fa-2x"></i>
+                </a>
+            </li>
+            <li class="네비__btn">
+                <a class="네비__link" href="더보기.html">
+                    <span class="네비__dot-notification"></span>
+                    <i class="fas fa-ellipsis-h fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="이동-화면">
+        <i class="fas fa-comment"></i>
+    </div>
+
+    <div id="모바일-지원안됨">
+        <span>사용중인 스크린이 너무 큽니다!!</span>
+    </div>
+
+    <script 
+    src="https://kit.fontawesome.com/6478f529f2.js" 
+    crossorigin="anonymous"
+    ></script>
+</body>
+</html>
