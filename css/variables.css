@@ -1,3 +1,5 @@
 :root {
   --serenity: #92a8d1;
+  --horizontal-space: 20px;
+  --border-design: 1px solid rgba(0, 0, 0, 0.1);
 }

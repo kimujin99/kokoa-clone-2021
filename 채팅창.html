@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>채팅창 - 코코아 클론</title>
+</head>
+<body class="no-drag" id="채팅-화면">
+    <div class="상태창">
+        <div class="상태창__column">
+            <span>신호 없음</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="상태창__column">
+            <span>18:43</span>
+        </div>
+        <div class="상태창__column">
+            <span>110%</span>
+            <i class="fas fa-battery-full fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="설정-헤더">
+        <div class="설정-헤더__column">
+            <a href="채팅.html">
+                <i class="fas fa-angle-left fa-2x"></i>
+            </a>
+        </div>
+        <div class="설정-헤더__column">
+            <h1 class="설정-헤더__title">류건우(박문대)</h1>
+        </div>
+        <div class="설정-헤더__column">
+            <span>
+                <i class="fas fa-search fa-lg"></i>
+            </span>
+            <span>
+                <i class="fas fa-bars fa-lg"></i>
+            </span>
+        </div>
+    </header>
+
+    <main class="메인-화면 메인-채팅">   
+        
+        <div class="채팅창__timestamp">
+            <span>20XX, </span><i class="far fa-square"></i><span>X, XX, </span><i class="far fa-square"></i><span>요일</span> 
+        </div>
+
+        <div class="메세지-정렬">
+            <img src="screenshots/Nobody.jpg" />
+            <div class="메세지-정렬__content">
+                <span class="메세지__autor">류건우(박문대)</span>
+                <div class="메세지__text">
+                    <span class="메세지__text-box">....</span>
+                    <span class="메세지__time">21:21</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="메세지-정렬 메시지-정렬--나">
+            <div class="메세지-정렬__content">
+                <div class="메세지__text">
+                    <span class="메세지__text-box">Enjoy your daydream :)</span>
+                    <span class="메세지__time">21:22</span>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <form class="입력창">
+        <div class="입력창__column">
+            <i class="fas fa-plus-square fa-2x"></i>
+        </div>
+        <div class="입력창__column">
+            <input type="text" placeholder="메세지를 입력하세요."/>
+            <i class="far fa-grin-tongue-squint"></i>
+            <button>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+    </form>
+
+    <div id="이동-화면">
+        <i class="fas fa-comment"></i>
+    </div>
+
+    <div id="모바일-지원안됨">
+        <span>사용중인 스크린이 너무 큽니다!!</span>
+    </div>
+
+    <script 
+    src="https://kit.fontawesome.com/6478f529f2.js" 
+    crossorigin="anonymous"
+    ></script>
+</body>
+</html>

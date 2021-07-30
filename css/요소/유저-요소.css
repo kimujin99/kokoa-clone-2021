@@ -1,0 +1,94 @@
+.유저-요소 {
+  justify-content: space-between;
+}
+
+.유저-요소,
+.유저-요소__column:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.유저-요소__avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 27px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.유저-요소__avatar__xl {
+  width: 80px;
+  height: 80px;
+  margin-top: 20px;
+}
+
+.유저-요소__title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.유저-요소__subtitle {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.유저-요소__subtitle i {
+  color: tomato;
+  margin: 0px 5px;
+}
+
+.유저-요소__subtitle--문대 {
+  text-decoration: line-through;
+}
+
+.유저-요소__avatar__sm {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+}
+
+.유저-요소__title--얇음 {
+  font-weight: 400;
+}
+
+.유저-요소__column:last-child {
+  color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.유저-요소__main--hover {
+  display: flex;
+  justify-content: space-between;
+  padding: 12.5px var(--horizontal-space);
+  background-color: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.유저-요소__main--hover:hover {
+  background-color: #f7cac9;
+}
+
+.유저-요소__time {
+  font-size: 13px;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.유저-요소__column i {
+  cursor: pointer;
+}
+
+.채팅__notification {
+  background-color: tomato;
+  width: 25px;
+  height: 25px;
+  border-radius: 12.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  animation: notificationAnimation 2s ease-in-out infinite;
+}

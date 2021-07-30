@@ -1,0 +1,125 @@
+.추천-친구 {
+  border-top: var(--border-design);
+  border-bottom: var(--border-design);
+  padding: 25px 0px;
+  margin: 25px 0px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.추천-친구 span {
+  margin: 100px 0px;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+}
+
+.오픈-채팅 {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.오픈-채팅__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12.5px;
+}
+
+.오픈-채팅__header span {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.오픈-포스팅 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  width: calc(100% + 20 * 2);
+  margin: 0px -20px;
+  padding: 12.5px 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.오픈-포스팅:hover {
+  background-color: #f7cac9;
+}
+
+.오픈-포스팅__title {
+  font-weight: 600;
+  color: #2e363e;
+  margin-bottom: 7px;
+}
+
+.오픈-포스팅__members {
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+}
+
+.오픈-포스팅__members img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.오픈-포스팅__member-count {
+  margin: 0px 5px;
+  font-size: 14px;
+}
+
+.오픈-포스팅__members .divider {
+  width: 1px;
+  height: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.오픈-포스팅__member-status {
+  color: var(--serenity);
+  margin: 0px 7px;
+}
+
+.오픈-포스팅__photo {
+  position: relative;
+}
+
+.오픈-포스팅__photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10%;
+}
+
+.오픈-포스팅__heart-count {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  right: 7px;
+}
+
+.오픈-포스팅__heart-count span {
+  margin-left: 5px;
+}
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.오픈-포스팅__heart-count:hover i {
+  will-change: transform;
+  animation: heartBeat 1s linear infinite;
+}

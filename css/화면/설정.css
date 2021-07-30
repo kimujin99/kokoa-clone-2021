@@ -1,0 +1,50 @@
+.설정__setting {
+  padding: 20px 0px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: calc(100% 20 * 2);
+  margin: 0px -20px;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.설정__setting:hover {
+  background-color: #f7cac9;
+}
+
+.설정__setting i {
+  margin-left: 30px;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0.3s ease-in-out;
+}
+
+.설정__setting:hover i {
+  color: white;
+}
+
+.설정__border {
+  display: flex;
+  align-items: center;
+  width: calc(100% 20 * 2);
+  margin: 0px -20px;
+}
+
+.설정__border-line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 20px 0px;
+}
+
+.설정__setting span {
+  margin: 0px 20px;
+}
+
+.설정__setting-column:last-child {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+}

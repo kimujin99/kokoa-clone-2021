@@ -1,0 +1,65 @@
+.화면-헤더 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0px var(--horizontal-space);
+  padding-top: 30px;
+}
+
+.화면-헤더__title {
+  font-size: 28px;
+  font-weight: 550;
+  color: #476cbb;
+}
+
+.화면-헤더__icons {
+  display: flex;
+}
+
+.화면-헤더__icons span {
+  margin-left: 10px;
+  padding: 10px 7.54px;
+  border-radius: 50%;
+  background-color: none;
+  color: #92a8d1;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.화면-헤더__icons span:hover {
+  background-color: #dfe8f7;
+}
+
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.화면-헤더__icons .fa-cog:hover {
+  animation: rotateCog 2s ease-in-out infinite;
+}
+
+@keyframes iconAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.15) rotateY(20deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.화면-헤더__icons .fa-search:hover,
+.화면-헤더__icons .fa-music:hover,
+.화면-헤더__icons .fa-comment-medical:hover,
+.화면-헤더__icons .fa-search:hover {
+  will-change: transform;
+  animation: iconAnimation 2s ease-in-out infinite;
+}

@@ -1,0 +1,26 @@
+.아이콘-정렬 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12.5px;
+}
+
+.아이콘-정렬__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  cursor: pointer;
+}
+
+.아이콘-정렬__icon i {
+  font-size: 35px;
+}
+
+.아이콘-정렬__icon span {
+  margin-top: 15px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.아이콘-정렬__icon:hover span {
+  color: #2e363e;
+}

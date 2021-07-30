@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>더보기 - 코코아 클론</title>
+</head>
+<body class="no-drag">
+    <div class="상태창">
+        <div class="상태창__column">
+            <span>신호 없음</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="상태창__column">
+            <span>18:43</span>
+        </div>
+        <div class="상태창__column">
+            <span>110%</span>
+            <i class="fas fa-battery-full fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="화면-헤더">
+        <h1 class="화면-헤더__title">더보기</h1>
+        <div class="화면-헤더__icons">
+            <span>
+                <i class="fas fa-search fa-lg"></i>
+            </span>
+            <span>
+                <i class="fas fa-music fa-lg"></i>
+            </span>
+            <span>
+                <a href="설정.html">
+                    <i class="fas fa-cog fa-lg"></i>
+                </a>
+            </span>
+        </div>
+    </header>
+
+    <main class="메인-화면 더보기-화면">
+        <div class="유저-요소">
+            <div class="유저-요소__column">
+                <img 
+                src="screenshots/프로필.jpg" 
+                class="유저-요소__avatar 유저-요소__avatar__xl" />
+                <div class="유저-요소__text">
+                    <h4 class="유저-요소__title">Nightmare</h4>
+                    <h6 class="유저-요소__subtitle">
+                        <span>+@%$!□□$□#%&</span>
+                        <i class="fas fa-exclamation-circle fa-lg"></i>
+                    </h6>
+                </div>
+            </div>
+            <div class="유저-요소__column">
+                <i class="far fa-comment-alt fa-2x"></i>
+            </div>
+        </div>
+
+        <div class="아이콘-정렬">
+            <div class="아이콘-정렬__icon">
+                <i class="far fa-calendar-alt"></i>
+                <span>캘린더</span>
+            </div>
+            <div class="아이콘-정렬__icon">
+                <i class="fas fa-archive"></i>
+                <span>서랍</span>
+            </div>
+            <div class="아이콘-정렬__icon">
+                <i class="far fa-grin-tongue-squint"></i>
+                <span>이모티콘</span>
+            </div>
+            <div class="아이콘-정렬__icon">
+                <i class="fas fa-paint-roller"></i>
+                <span>테마</span>
+            </div>            
+        </div>
+
+        <div class="아이콘-정렬">
+            <div class="아이콘-정렬__icon">
+                <i class="far fa-user-circle"></i>
+                <span>계정</span>
+            </div>
+            <div class="아이콘-정렬__icon">
+                <i class="far fa-comments"></i>
+                <span>오픈채팅</span>
+            </div>
+            <div class="아이콘-정렬__icon">
+            </div>
+            <div class="아이콘-정렬__icon">
+            </div>         
+        </div>
+
+        <div class="더보기-앱추천">
+            <h4 class="더보기-앱추천__title">애플리케이션</h4>
+            <div class="더보기-앱추천__icons">
+                <div class="더보기-앱추천__icon">
+                    <div class="더보기-앱추천__icon-image">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <span class="더보기-앱추천__icon-text">상태창</span>
+                </div>
+                <div class="더보기-앱추천__icon">
+                    <div class="더보기-앱추천__icon-image">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <span class="더보기-앱추천__icon-text">특성뽑기</span>
+                </div>
+                <div class="더보기-앱추천__icon">
+                    <div class="더보기-앱추천__icon-image">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <span class="더보기-앱추천__icon-text">진실확인</span>
+                </div>
+                <div class="더보기-앱추천__icon not-hover">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <nav class="네비">
+        <ul class="네비__list">
+            <li class="네비__btn">
+                <a class="네비__link" href="친구.html">
+                    <i class="far fa-user fa-2x"></i>
+                </a>
+            </li>
+            <li class="네비__btn">
+                <a class="네비__link" href="채팅.html">
+                    <span class="네비__notification">1</span>
+                    <i class="far fa-comment fa-2x"></i>
+                </a>
+            </li>
+            <li class="네비__btn">
+                <a class="네비__link" href="찾기.html">
+                    <i class="fas fa-search fa-2x"></i>
+                </a>
+            </li>
+            <li class="네비__btn">
+                <a class="네비__link" href="더보기.html">
+                    <span class="네비__dot-notification"></span>
+                    <i class="fas fa-ellipsis-h fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="이동-화면">
+        <i class="fas fa-comment"></i>
+    </div>
+
+    <div id="모바일-지원안됨">
+        <span>사용중인 스크린이 너무 큽니다!!</span>
+    </div>
+    
+    <script 
+    src="https://kit.fontawesome.com/6478f529f2.js" 
+    crossorigin="anonymous"
+    ></script>
+</body>
+</html>

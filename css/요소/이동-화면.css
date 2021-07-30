@@ -1,0 +1,25 @@
+@keyframes hide이동-화면 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#이동-화면 {
+  background-color: var(--serenity);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 132px;
+  animation: hide이동-화면 0.3s ease-in-out forwards;
+  animation-delay: 1s;
+  position: fixed;
+  z-index: 3;
+}

@@ -1,0 +1,47 @@
+.더보기-화면 .아이콘-정렬 {
+  margin: 35px 0px;
+}
+
+.더보기-앱추천 {
+  margin-top: 35px;
+  border-top: var(--border-design);
+  padding: 25px 0px;
+}
+
+.더보기-앱추천__title {
+  margin-bottom: 15px;
+}
+
+.더보기-앱추천__icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.더보기-앱추천__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 15px 0px;
+  margin: 0px 10px;
+  width: 25%;
+  border-radius: 10px;
+  cursor: pointer;
+  color: var(--serenity);
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.더보기-앱추천__icon i {
+  font-size: 35px;
+}
+
+.더보기-앱추천__icon span {
+  margin-top: 15px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.더보기-앱추천__icon:hover:not(:last-child) {
+  background-color: #f7cac9;
+  color: white;
+}

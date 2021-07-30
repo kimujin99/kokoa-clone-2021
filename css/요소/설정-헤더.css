@@ -1,0 +1,48 @@
+.설정-헤더 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  height: 70px;
+  padding: 0px var(--horizontal-space);
+  margin: 15px 7.5px 0px 0px;
+  color: #476cbb;
+}
+
+.설정-헤더__title {
+  font-size: 23px;
+}
+
+.설정-헤더__column {
+  display: flex;
+  width: 33%;
+}
+
+.설정-헤더__column:first-child {
+  cursor: pointer;
+}
+
+.설정-헤더__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+.설정-헤더__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.설정-헤더__column span {
+  margin-left: 10px;
+  padding: 10px 7.54px;
+  border-radius: 50%;
+  background-color: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.설정-헤더__column span:hover {
+  background-color: #dfe8f7;
+}

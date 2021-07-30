@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>코코아 클론에 어서오세요</title>
 </head>
-<body>
+<body class="no-drag">
     <div class="상태창">
         <div class="상태창__column">
             <span>신호 없음</span>
@@ -30,13 +30,16 @@
         </p>
     </header>
 
-    <form id="로그인-form">
-        <input type="text" placeholder="이메일 또는 전화번호" />
-        <input type="password" placeholder="비밀번호" />
+    <form action="친구.html" method="GET" id="로그인-form">
+        <input type="text" required placeholder="이메일 또는 전화번호" />
+        <input type="password" required placeholder="비밀번호" />
         <input type="submit" value="로그인" />
         <a href="#">코코아 계정 또는 비밀번호 찾기</a>
     </form>
 
+    <div id="모바일-지원안됨">
+        <span>사용중인 스크린이 너무 큽니다!!</span>
+    </div>
 
     <script 
     src="https://kit.fontawesome.com/6478f529f2.js" 

@@ -1,0 +1,220 @@
+#채팅-화면 {
+  background-color: #dccef7;
+  height: 100vh;
+}
+
+#채팅-화면 .상태창 {
+  z-index: 2;
+  background-color: #dccef7;
+}
+
+#채팅-화면 .설정-헤더 {
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  background-color: #dccef7;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.메인-채팅 {
+  margin-top: 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.5s linear;
+  animation-delay: 1s;
+}
+
+.채팅창__timestamp {
+  font-size: 14px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin: 15px 0px;
+}
+
+.메세지-정렬 {
+  width: 100%;
+  display: flex;
+  margin: 10px 0px;
+}
+
+.메세지-정렬 img {
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.메세지-정렬__content {
+  margin: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 10px;
+}
+
+.메세지__autor {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.메세지__text {
+  margin: 7px 0px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.메세지__text-box {
+  background-color: white;
+  padding: 13px 10px;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  font-size: 16px;
+}
+
+.메세지__time {
+  margin: 0px 5px;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.메시지-정렬--나 {
+  justify-content: flex-end;
+}
+
+.메시지-정렬--나 .메세지-정렬__content {
+  margin: 0px;
+}
+
+.메시지-정렬--나 .메세지__text-box {
+  background-color: var(--serenity);
+  color: white;
+  border-radius: 15px;
+  border-top-right-radius: 0px;
+}
+
+.메시지-정렬--나 .메세지__text {
+  flex-direction: row-reverse;
+}
+
+.입력창 {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+  align-items: center;
+  box-sizing: border-box;
+  transition: background 0.3s ease-in-out;
+}
+
+.입력창 .입력창__column:first-child {
+  width: 10%;
+}
+
+.입력창 .입력창__column:last-child {
+  width: 90%;
+  position: relative;
+}
+
+.입력창 input {
+  padding: 15px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  box-sizing: border-box;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.입력창 input::selection {
+  background-color: #f39593;
+}
+
+.입력창__column:last-child > i,
+.입력창__column:last-child button {
+  position: absolute;
+  right: 0;
+}
+
+.입력창__column:last-child > i {
+  right: 60px;
+  top: 12px;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.5);
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.입력창__column:last-child > i:hover {
+  color: #2e363e;
+}
+
+.입력창__column:last-child button {
+  background-color: #f7cac9;
+  border: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  top: 3px;
+  right: 3px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.입력창__column:last-child button:focus,
+.입력창__column:last-child button:active {
+  outline: none;
+}
+
+.입력창__column:last-child button:hover {
+  background-color: #f39593;
+}
+
+.입력창__column:first-child i {
+  color: #f7cac9;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.입력창__column:first-child i:hover {
+  color: #f39593;
+}
+
+.입력창 .fa-grin-tongue-squint,
+.입력창 .입력창__column:first-child,
+.입력창 button {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.입력창:focus-within .fa-grin-tongue-squint,
+.입력창:focus-within .입력창__column:first-child,
+.입력창:focus-within button {
+  opacity: 0;
+}
+
+.입력창:focus-within input {
+  width: 94vw;
+  transform: translateX(-12%);
+  border: 1px solid #f7cac9;
+}
+
+.입력창:focus-within {
+  background-color: #f7cac9;
+}

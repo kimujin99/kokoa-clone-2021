@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>채팅 - 코코아 클론</title>
+</head>
+<body class="no-drag">
+    <div class="상태창">
+        <div class="상태창__column">
+            <span>신호 없음</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="상태창__column">
+            <span>18:43</span>
+        </div>
+        <div class="상태창__column">
+            <span>110%</span>
+            <i class="fas fa-battery-full fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="화면-헤더">
+        <h1 class="화면-헤더__title">채팅</h1>
+        <div class="화면-헤더__icons">
+            <span>
+                <i class="fas fa-search fa-lg"></i>
+            </span>
+            <span>
+                <i class="fas fa-comment-medical fa-lg"></i>
+            </span>
+            <span>
+                <i class="fas fa-music fa-lg"></i>
+            </span>
+            <span>
+                <a href="설정.html">
+                    <i class="fas fa-cog fa-lg"></i>
+                </a>
+            </span>
+        </div>
+    </header>
+
+    <main class="채팅-화면">
+        <a href="채팅창.html">
+            <div class="유저-요소__main--hover">
+                <div class="유저-요소__column">
+                    <img 
+                    src="screenshots/Nobody.jpg" 
+                    class="유저-요소__avatar 유저-요소__avatar" />
+                    <div class="유저-요소__text">
+                        <h4 class="유저-요소__title 유저-요소__title--얇음">류건우(박문대)</h4>
+                        <h6 class="유저-요소__subtitle">Enjoy your daydream :)</h6>
+                    </div>
+                </div>
+                <div class="유저-요소__column">
+                    <span class="유저-요소__time">21:22</span>
+                    <span class="채팅__notification">1</span>
+                </div>
+            </div>
+        </a>
+
+         <div class="유저-요소__main--hover">
+            <div class="유저-요소__column">
+                <img 
+                src="screenshots/청려02_60X60.jpg" 
+                class="유저-요소__avatar 유저-요소__avatar" />
+                <div class="유저-요소__text">
+                    <h4 class="유저-요소__title 유저-요소__title--얇음">청려(신재현)</h4>
+                    <h6 class="유저-요소__subtitle">#@%$!□□$□#%&__$%#$□&_#1</h6>
+                </div>
+            </div>
+            <div class="유저-요소__column">
+                <span class="유저-요소__time">20X□.X@.□□</span>
+            </div>
+         </div>
+        
+    </main>
+
+    <nav class="네비">
+        <ul class="네비__list">
+            <li class="네비__btn">
+                <a class="네비__link" href="친구.html">
+                    <i class="far fa-user fa-2x"></i>
+                </a>
+            </li>
+            <li class="네비__btn">
+                <a class="네비__link" href="채팅.html">
+                    <span class="네비__notification">1</span>
+                    <i class="fas fa-comment fa-2x"></i>
+                </a>
+            </li>
+            <li class="네비__btn">
+                <a class="네비__link" href="찾기.html">
+                    <i class="fas fa-search fa-2x"></i>
+                </a>
+            </li>
+            <li class="네비__btn">
+                <a class="네비__link" href="더보기.html">
+                    <span class="네비__dot-notification"></span>
+                    <i class="fas fa-ellipsis-h fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="이동-화면">
+        <i class="fas fa-comment"></i>
+    </div>
+
+    <div id="모바일-지원안됨">
+        <span>사용중인 스크린이 너무 큽니다!!</span>
+    </div>
+
+    <script 
+    src="https://kit.fontawesome.com/6478f529f2.js" 
+    crossorigin="anonymous"
+    ></script>
+</body>
+</html>

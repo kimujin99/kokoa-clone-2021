@@ -1,0 +1,48 @@
+#친구-display-link {
+  text-align: center;
+  display: block;
+  background-color: #dfe8f7;
+  padding: 15px 0px;
+  cursor: pointer;
+}
+
+#친구-display-link i {
+  color: rgba(0, 0, 0, 0.3);
+  margin-left: 5px;
+}
+
+.친구-화면__not-hover {
+  padding: 0px var(--horizontal-space);
+}
+
+.친구-화면__channel-header {
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.친구-화면__channel {
+  margin-top: 25px;
+  border-top: var(--border-design);
+  padding-top: 15px;
+}
+
+.친구-화면__friends-header {
+  padding: 0px var(--horizontal-space);
+  margin-bottom: 12.5px;
+}
+
+.친구-화면__friends-header__column span {
+  margin-right: 5px;
+}
+
+.친구-화면__border {
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  border-top: var(--border-design);
+  padding-top: 15px;
+}
